@@ -1,0 +1,80 @@
+.box{
+    display: block;
+    /*without flex wrap everything will be in the same line*/
+}
+.small-1, .small-2, .small-3{
+    width: 100%;
+    height:100vh;
+}   
+.small-1{
+    background-color: blanchedalmond;
+
+}
+.small-2{
+    background-color: blue;
+    
+}
+.small-3{
+    background-color: green;
+    
+}
+body{
+    margin: 0%;
+}
+ @media (min-width:600px)
+ {
+     .box{
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .small-1, .small-2, .small-3{
+        width: 100%;
+        height:50vh;
+    }    
+
+
+ }
+ @media (min-width:800px)
+ {
+
+    .small-1{
+        width:60%;
+        height:100vh;
+        order:2;
+    
+    }
+    .small-2{
+        width:40%;
+        height:100vh;
+        order:1;
+        
+    }
+    .small-3{
+        width:100%;
+        height:50vh;
+        order:3; 
+    }    
+
+
+ }
+ @media (min-width:1000px)
+ {
+
+    .small-1{
+        width:60%;
+        height:100vh;
+        order:2;
+    
+    }
+    .small-2{
+        width:20%;
+        height:100vh;
+        order:1;
+    }
+    .small-3{
+        width:20%;
+        height:100vh;
+        order:3;
+    }    
+}
+ 

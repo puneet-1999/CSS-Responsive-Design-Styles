@@ -1,0 +1,71 @@
+
+.box1, .box2 {
+    display: block;
+    /*without flex wrap everything will be in the same line*/
+}
+.small-1,.small-2, .small-3{
+    width: 100%;
+}   
+.small-1{
+    height:20vh;
+    background-color: blanchedalmond;
+
+}
+.small-2{
+    height:80vh;
+    background-color: blue;
+    
+}
+.small-3{
+    height:100vh;
+    background-color: green;
+    
+}
+body{
+    margin: 0%;
+}
+ @media (min-width:600px)
+ {
+     .small-1{
+         height:30vh;
+     } 
+     .small-2{
+         height:60vh;
+     } 
+     .small-3{
+    height:60vh;
+    }    
+}
+@media (min-width:800px)
+ {
+     .box{
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .box1{
+        width:20%;
+     } 
+     .box2{
+       
+        width:80%;
+        /* -webkit-flex-flow: row wrap;*/
+        /*flex-flow: row wrap;*/
+     }
+     .small-1{
+         height:100vh;
+     } 
+     .small-2{
+         height:50vh;
+     } 
+     .small-3{
+
+        height:50vh;
+    }    
+}
+@media (min-width:1400px)
+{
+    .box{
+        width: 1400px;
+        margin:0 auto;
+    }
+}
